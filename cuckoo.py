@@ -44,7 +44,7 @@ def cuckoo_init(quiet=False, debug=False, artwork=False, test=False):
     logo()
     check_working_directory()
     check_configs()
-    check_version()
+    #check_version()
     create_structure()
 
     if artwork:

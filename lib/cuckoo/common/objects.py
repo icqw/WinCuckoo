@@ -481,7 +481,9 @@ class File(object):
         # http://stackoverflow.com/a/454589
         urls = set()
         f = open(self.file_path, "rb")
-        m = mmap.mmap(f.fileno(), 0, access=mmap.PROT_READ)
+
+        #m = mmap.mmap(f.fileno(), 0, access=mmap.PROT_READ)
+        m = mmap.mmap(f.fileno(), 0)
 
         for url in re.findall(URL_REGEX, m):
             if not is_whitelisted_domain(url[1]):

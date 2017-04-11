@@ -62,18 +62,11 @@ def check_configs():
     """
     configs = [
         os.path.join(CUCKOO_ROOT, "conf", "auxiliary.conf"),
-        os.path.join(CUCKOO_ROOT, "conf", "avd.conf"),
         os.path.join(CUCKOO_ROOT, "conf", "cuckoo.conf"),
-        os.path.join(CUCKOO_ROOT, "conf", "esx.conf"),
-        os.path.join(CUCKOO_ROOT, "conf", "kvm.conf"),
         os.path.join(CUCKOO_ROOT, "conf", "memory.conf"),
-        os.path.join(CUCKOO_ROOT, "conf", "physical.conf"),
         os.path.join(CUCKOO_ROOT, "conf", "processing.conf"),
-        os.path.join(CUCKOO_ROOT, "conf", "qemu.conf"),
         os.path.join(CUCKOO_ROOT, "conf", "reporting.conf"),
         os.path.join(CUCKOO_ROOT, "conf", "virtualbox.conf"),
-        os.path.join(CUCKOO_ROOT, "conf", "vmware.conf"),
-        os.path.join(CUCKOO_ROOT, "conf", "xenserver.conf"),
     ]
 
     for config in configs:
